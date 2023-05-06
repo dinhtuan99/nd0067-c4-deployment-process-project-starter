@@ -13,8 +13,8 @@
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "deploy": "npm run build && eb list && eb use udagram-api-dev && eb deploy",
-    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "deploy": "npm run build && eb list && eb use udagram-api-final-dev && eb deploy",
+    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && npm-build-zip --source=..\\www && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -47,6 +47,7 @@
     "@typescript-eslint/parser": "^2.19.2",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
+    "npm-build-zip": "^1.0.3",
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
     "mocha": "^6.1.4",
