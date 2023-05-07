@@ -68,6 +68,15 @@ The e2e tests are using Protractor and Jasmine.
 - [Node](https://nodejs.org) - Javascript Runtime
 - [Express](https://expressjs.com/) - Javascript API Framework
 
-## License
+## Screenshots
+![build pipeline](screenshots\build-pipeline.png)
+![deploy pipeline](screenshots\deploy-pipeline.png)
+![pipeline](screenshots\pipeline.png)
+![eb](screenshots\eb.png)
+![rds](screenshots\rds.png)
+![s3-1](screenshots\s3-1.png)
+![s3-2](screenshots\s3-2.png)
+![s3-3](screenshots\s3-3.png)
+## Licens3
 
 [License](LICENSE.txt)
