@@ -1,11 +1,11 @@
 branch-defaults:
   default:
-    environment: udagram-api-tuanvd-dev
+    environment: udagram-api-fpt-dev
     group_suffix: null
 deploy:
   artifact: www/udagram-api_2.0.0.zip
 global:
-  application_name: udagram-api-tuanvd
+  application_name: udagram-api-fpt
   branch: null
   default_ec2_keyname: mykeypair
   default_platform: Node.js 14 running on 64bit Amazon Linux 2
